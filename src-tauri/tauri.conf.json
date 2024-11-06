@@ -1,13 +1,13 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": ".",
+  "productName": "sherinResturant",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.resturant.sherin",
   "build": {
     "frontendDist": "../frontend/build",
     "devUrl": "http://localhost:3000",
     "beforeDevCommand": "npm-run-all -p start:frontend start:backend",
-    "beforeBuildCommand": "npm run build"
+    "beforeBuildCommand": "cd frontend && npm run build"
   },
   "app": {
     "windows": [
@@ -24,6 +24,7 @@
     }
   },
   "bundle": {
+
     "active": true,
     "targets": "all",
     "icon": [
